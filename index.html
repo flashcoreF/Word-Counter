@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>word-counter</title>
+  </head>
+  <body>
+    <div class="page-shell">
+      <main class="card">
+        <div class="hero">
+          <p class="eyebrow">Word counter</p>
+           </div>
+        <textarea id="text" placeholder="Write or paste text here…" autocomplete="off"></textarea>
+        <div id="counters" class="counters">
+          <div class="counter">
+            <span class="label">Words</span>
+            <span class="value" id="words">0</span>
+          </div>
+          <div class="counter">
+            <span class="label">Letters</span>
+            <span class="value" id="letters">0</span>
+          </div>
+        </div>
+        <button id="clear" class="clear-button">Clear text</button>
+      </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
